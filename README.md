@@ -1,7 +1,7 @@
 chatty
 ======
 
-#Rodando projeto
+##Rodando projeto
 
 Instale o [GruntJS](http://gruntjs.com/) e [Yeoman](http://yeoman.io/index.html)
 
