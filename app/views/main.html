@@ -1,9 +1,19 @@
-<div class="hero-unit">
-  
-  <ul>
-      <li ng-repeat="dado in result">
-      	<p  ng-bind-html-unsafe="dado"></p>
+<header class="header">
+  <div class="wrapper">
+    <h1 class="logo">Chatty</h1>
+    <form action="" class="form-search">
+      <input class="search" type="search" />
+    </form>
+    <nav class="nav"></nav>
+  </div>
+</header>
+
+<main class="content">
+  <div class="wrapper">
+    <ul class="phare-list">
+      <li class="phrase-item" ng-repeat="dado in result">
+        <a class="phrase-item" href="#" ng-bind-html-unsafe="dado"></a>
       </li>
-  </ul>
-  
-</div>
+    </ul>
+  </div>
+</main>

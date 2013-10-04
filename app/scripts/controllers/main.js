@@ -29,7 +29,7 @@ angular.module('chattyApp')
 	        	$.each( listLanguage, function(i, langValue){
 	        		
 	        		if ( value.id == langValue.id ) {
-	        				result = value.frase + '<span>' +langValue.frase + '</span>'
+	        				result = '<span class="phrase-local">' + value.frase + '</span> <span class="phrase-foreign">' +langValue.frase + '</span>'
 	        				frases.push( result );
 	        		};
 
@@ -38,7 +38,6 @@ angular.module('chattyApp')
 	        });
 
 	        $scope.result = frases;
-	        console.log( frases );
 	        
 
 	      }).

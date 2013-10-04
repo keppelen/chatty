@@ -1,1 +1,41 @@
-/* Will be compiled down to a single stylesheet with your sass files */
+/* app style */
+* {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+body {
+  font: normal normal 10px/1em arial;
+}
+.wrapper {
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* header */
+.header {
+  background: #e74c3c;
+  padding: 20px 0;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  width: 100px;
+  float: left;
+}
+.form-search {
+  width: 100%;
+  float:left;
+}
+.form-search .search {
+  width: 100%;
+  padding: 10px;
+}
+.nav {
+  width: 70px;
+  float: right;
+}
