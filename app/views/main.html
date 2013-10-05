@@ -23,20 +23,22 @@
       <form action="" class="form-choose">
         <label for="">Qual país de destino?</label>
         <select name="" ng-model="user.origem">
+          <option value=""></option>
           <option value="en">Inglaterra</option>
           <option value="en">Canada</option>
           <option value="en">Estados Unidos</option>
-          <option value="pt-br">Brasil</option>
+          <option value="pt">Brasil</option>
         </select>
-        
+
         <label for="">Qual seu idioma?</label>
         <select name="" ng-model="user.aprender">
+          <option value=""></option>
           <option value="en">Inglaterra</option>
           <option value="en">Canada</option>
           <option value="en">Estados Unidos</option>
-          <option value="pt-br">Brasil</option>
+          <option value="pt">Brasil</option>
         </select>
-        
+
         <button class="btn btn-save" ng-click="choose(user)">salvar</button>
       </form>
     </div>
