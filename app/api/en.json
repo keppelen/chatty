@@ -1,18 +1,42 @@
 [
   {
     "id": 1,
-    "frase": "Who are you"
+    "frase": "Hello"
   },
   {
     "id": 2,
-    "frase": "It's all right"
+    "frase": "Alright?"
   },
   {
     "id": 3,
-    "frase": "how are you"
+    "frase": "How old are you?"
   },
   {
     "id": 4,
-    "frase": "Hello"
+    "frase": "How much?"
+  },
+  {
+    "id": 5,
+    "frase": "Could you help me?"
+  },
+  {
+    "id": 6,
+    "frase": "sorry"
+  },
+  {
+    "id": 7,
+    "frase": "I do not speak your ..."
+  },
+  {
+    "id": 8,
+    "frase": "You have FirefoxOS?"
+  },
+  {
+    "id": 9,
+    "frase": "where is ..."
+  },
+  {
+    "id": 10,
+    "frase": "Where are you from?"
   }
 ]
