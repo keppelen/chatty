@@ -6,13 +6,18 @@
 
 ## Getting Started
 
-1. Install: `npm install`
-3. Run: `grunt server`
-4. Access [http://localhost:9000/](http://localhost:9000/)
+1. Install: `npm install && bower install`
+2. Run: `grunt server`
+3. Access [http://localhost:9000/](http://localhost:9000/)
 
-## Dependencies
+## Dependencies 
+You need the following components:
 
-You're going to need [NodeJS](http://nodejs.org/download/) to run those commands.
+* [Ruby](https://www.ruby-lang.org/pt/downloads/) 
+* [NodeJS](http://nodejs.org/download/)
+* Compass (gem install compass)
+* bower (npm install -g bower)
+* Grunt (npm install -g grunt-cli)
 
 <!-- ## History -->
 <!-- Check [Release](https://github.com/zenorocha/generator-firefox-os/releases/) list. -->
