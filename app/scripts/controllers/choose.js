@@ -16,17 +16,14 @@ angular.module('chattyApp')
   	};
 
 
-    // 
-    var languageOrigem = localStorage.getItem('LanguageOrigem'),
-        languageDestino = localStorage.getItem('LanguageDestino'),
-        languageBrowser = navigator.language;
+    // Get Linguagem
+    var languageBrowser = navigator.language;
 
     // Lista JSON das frases
     $scope.getLanguage = function() {
       $http({method: 'get', url: '/api/' + languageBrowser.split("-")[0] + '.json'  }).
         success(function( data ) {
           $scope.ux = data.ux;
-          console.log( "lakdkja" );
         }).
         error(function() {
           languageBrowser = "en";

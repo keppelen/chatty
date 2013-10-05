@@ -9,7 +9,6 @@ angular.module('chattyApp')
     // Lista JSON das frases
     $http({method: 'get', url: '/api/' + languageOrigem + '.json'  }).
       success(function( data ) {
-        console.log( data.phrases );
         $scope.languageOrigem = data.phrases;
         $scope.listLanguage( languageDestino );
       }).
@@ -40,14 +39,35 @@ angular.module('chattyApp')
         });
      }
 
+     // Get Linguagem
+      var languageBrowser = navigator.language;
 
-var nav = document.querySelector('.nav>a');
-var choose = document.querySelector('.choose');
-var save = document.querySelector('.btn-save');
-nav.addEventListener('click', function(e) {
-  choose.className = choose.className + " active"
-});
-save.addEventListener('click', function(e) {
-  choose.className = choose.className - " active"
-});
+      // Lista JSON das frases
+      $scope.getLanguage = function() {
+        $http({method: 'get', url: '/api/' + languageBrowser.split("-")[0] + '.json'  }).
+          success(function( data ) {
+            $scope.ux = data.ux;
+          }).
+          error(function() {
+            languageBrowser = "en";
+            $scope.getLanguage();
+          });
+      }
+
+      $scope.getLanguage();
+
+
+    // Nav
+    var nav = document.querySelector('.nav>a'),
+        choose = document.querySelector('.choose'),
+        save = document.querySelector('.btn-save');
+
+    nav.addEventListener('click', function(e) {
+      choose.className = choose.className + " active";
+    });
+
+    save.addEventListener('click', function(e) {
+      choose.className = choose.className - " active";
+    });
+    
   });
