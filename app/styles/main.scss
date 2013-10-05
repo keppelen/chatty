@@ -97,6 +97,48 @@ body {
   right: 0;
   z-index: 2;
 }
+.loading {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  min-height: 100%;
+  background-color: #fff;
+  -moz-animation: movetop 1.8s 1 2s linear forwards;
+  -webkit-animation: movetop 1.8s 1 2s linear forwards;
+  animation: movetop 1.8s 1 2s linear forwards;
+}
+@-moz-keyframes movetop {
+  to {bottom: 100%;}
+}
+@-webkit-keyframes movetop {
+  to {bottom: 100%;}
+}
+@keyframes movetop {
+  to {bottom: 100%;}
+}
+.pre-choose {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  min-height: 100%;
+  background-color: #fff;
+  -moz-animation: movepre 1.8s 1 2s linear forwards;
+  -webkit-animation: movepre 1.8s 1 2s linear forwards;
+  animation: movepre 1.8s 1 2s linear forwards;
+}
+@-moz-keyframes movepre {
+  to {bottom: 0;}
+}
+@-webkit-keyframes movepre {
+  to {bottom: 0;}
+}
+@keyframes movepre {
+  to {bottom: 0;}
+}
 .core {
   top: 90px;
 }
@@ -111,29 +153,105 @@ body {
   left: 0;
 }
 
+/* loading */
+.logo-c, .logo-t{
+  position: relative;
+  display: block;
+  margin: 4em auto;
+  opacity: 0;
+  -moz-animation: fadein .8s 1 linear forwards;
+  -webkit-animation: fadein .8s 1 linear forwards;
+  animation: fadein .8s 1 linear forwards;
+}
+.logo-t {
+  position: relative;
+  display: block;
+  margin: 1em auto;
+  -moz-animation: movein 1.3s 1 linear forwards;
+  -webkit-animation: movein 1.3s 1 linear forwards;
+  animation: movein 1.3s 1 linear forwards;
+}
+@-moz-keyframes fadein {
+  to {opacity: 1;}
+}
+@-webkit-keyframes fadein {
+  to {opacity: 1;}
+}
+@keyframes fadein {
+  to {opacity: 1;}
+}
+@-moz-keyframes movein {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  60% {
+    top: -1.2em;
+    opacity: .2;
+  }
+  100% {
+    top: -1.5em;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes movein {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  60% {
+    top: -1.2em;
+    opacity: .2;
+  }
+  100% {
+    top: -1.5em;
+    opacity: 1;
+  }
+}
+@keyframes movein {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  60% {
+    top: -1.2em;
+    opacity: .2;
+  }
+  100% {
+    top: -1.5em;
+    opacity: 1;
+  }
+}
+
 /* choose */
 .form-choose {
   padding: 50px 0;
-  label {
-    display: block;
-    font-size: 1.6em;
-    color: #fff;
-    margin: 0 0 .5em;
-  }
-  input, select {
-    display: block;
-    margin-bottom: 40px;
-    width: 100%;
-    padding: 10px;
-    font-size: 1.6em;
-    border-radius: 4px;
-  }
-  .btn {
-    display: block;
-    width: 100%;
-    padding: 20px 50px;
-    background-color: rgb(241, 196, 15);
-    color: #fff;
-    font-size: 2em;
-  }
 }
+.form-choose input, .form-choose select {
+  display: block;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.6em;
+  border-radius: 4px;
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 20px 50px;
+  background-color: rgb(241, 196, 15);
+  color: #fff;
+  font-size: 2em;
+}
+.form-choose label {
+  display: block;
+  font-size: 1.6em;
+  color: #fff;
+  margin: 0 0 .5em;
+}
+.pre-choose .form-choose {
+  width: 60%;
+  margin: 2em auto 0;
+}
+.pre-choose label {color: #777;}
+select {border: 1px solid #e7e7e7;}
