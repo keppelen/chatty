@@ -44,6 +44,7 @@
   "ux": {
     "paisOrigem": "Your country",
     "paisDestino": "Destination Country",
-    "action": "save"
+    "action": "save",
+    "search": "start searching for foreign phrases..."
   }
 }
