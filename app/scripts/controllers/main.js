@@ -30,7 +30,7 @@ angular.module('chattyApp')
               result = '<span class="phrase-local">' + $scope.languageOrigem[i].frase + '</span> <br/> <span class="phrase-foreign">' + langDestino.phrases[i].frase + '</span>';
               frases.push( result );
             } 
-          };
+          }
 
           $scope.result = frases;
 
@@ -38,7 +38,7 @@ angular.module('chattyApp')
         error(function() {
           // error
         });
-     }
+     };
 
      // Get Linguagem
       var languageBrowser = navigator.language;
@@ -53,7 +53,7 @@ angular.module('chattyApp')
             languageBrowser = "en";
             $scope.getLanguage();
           });
-      }
+      };
 
       $scope.getLanguage();
 
