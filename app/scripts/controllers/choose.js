@@ -21,12 +21,12 @@ angular.module('chattyApp')
 
     // Lista JSON das frases
     $scope.getLanguage = function() {
-      $http({method: 'get', url: '/api/' + languageBrowser.split("-")[0] + '.json'  }).
+      $http({method: 'get', url: '/api/' + languageBrowser.split('-')[0] + '.json'  }).
         success(function( data ) {
           $scope.ux = data.ux;
         }).
         error(function() {
-          languageBrowser = "en";
+          languageBrowser = 'en';
           $scope.getLanguage();
         });
     };

@@ -10,7 +10,6 @@ angular.module('chattyApp')
     $http({method: 'get', url: '/api/' + languageOrigem + '.json'  }).
       success(function( data ) {
         $scope.languageOrigem = data.phrases;
-        console.log( "oi" );
         $scope.listLanguage( languageDestino );
       }).
       error(function() {
@@ -26,7 +25,7 @@ angular.module('chattyApp')
               frases = [];
 
           for (var i = 0, len = $scope.languageOrigem.length; i < len; i++) {
-            if ($scope.languageOrigem[i].id == langDestino.phrases[i].id) {
+            if ($scope.languageOrigem[i].id === langDestino.phrases[i].id) {
               result = '<span class="phrase-local">' + $scope.languageOrigem[i].frase + '</span> <br/> <span class="phrase-foreign">' + langDestino.phrases[i].frase + '</span>';
               frases.push( result );
             } 
@@ -50,7 +49,7 @@ angular.module('chattyApp')
             $scope.ux = data.ux;
           }).
           error(function() {
-            languageBrowser = "en";
+            languageBrowser = 'en';
             $scope.getLanguage();
           });
       };
@@ -71,11 +70,11 @@ angular.module('chattyApp')
         save = document.querySelector('.btn-save');
 
     nav.addEventListener('click', function(e) {
-      choose.className = choose.className + " active";
+      choose.className = choose.className + 'active';
     });
 
     save.addEventListener('click', function(e) {
-      choose.className = choose.className - " active";
+      choose.className = choose.className - 'active';
     });
     
   });
