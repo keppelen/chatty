@@ -6,9 +6,9 @@
 
 ## Getting Started
 
-1. Install: `npm install`
-3. Run: `grunt server`
-4. Access [http://localhost:9000/](http://localhost:9000/)
+1. Install: `npm install && bower install`
+2. Run: `grunt server`
+3. Access [http://localhost:9000/](http://localhost:9000/)
 
 ## Dependencies
 
