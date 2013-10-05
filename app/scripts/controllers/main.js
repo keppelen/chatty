@@ -2,14 +2,14 @@
 
 angular.module('chattyApp')
   .controller('MainCtrl', function ( $scope, $http ) {
-  	
-  	var languageOrigem = localStorage.getItem('LanguageOrigem'),
-  			languageDestino = localStorage.getItem('LanguageDestino');
     
-  	// Lista JSON das frases
-  	$http({method: 'get', url: '/api/' + languageOrigem + '.json'  }).
+    var languageOrigem = localStorage.getItem('LanguageOrigem'),
+        languageDestino = localStorage.getItem('LanguageDestino');
+    
+    // Lista JSON das frases
+    $http({method: 'get', url: '/api/' + languageOrigem + '.json'  }).
       success(function( frases ) {
-      	$scope.frases = frases;
+        $scope.frases = frases;
         $scope.listLanguage( languageDestino );
       }).
       error(function() {
@@ -18,32 +18,26 @@ angular.module('chattyApp')
 
      // Lista JSON do pais do usuário
      $scope.listLanguage = function( value ) {
-     	$http({method: 'get', url: '/api/' + languageDestino + '.json'  }).
-	      success(function( listLanguage ) {
+      $http({method: 'get', url: '/api/' + languageDestino + '.json'  }).
+        success(function( listLanguage ) {
 
-	        var result = {};
-	        var frases = []
+          var result = {};
+          var frases = []
 
-	        $.each($scope.frases, function(i, value){
+          for (var i = 0, len = $scope.frases.length; i < len; i++) {
+            if ($scope.frases[i].id == listLanguage[i].id) {
+              result = '<span class="phrase-local">' + listLanguage[i].frase + '</span> <br/> <span class="phrase-foreign">' + $scope.frases[i].frase + '</span>';
+              frases.push( result );
+            } 
+          }
+          $scope.result = frases;
+        
+          
 
-	        	$.each( listLanguage, function(i, langValue){
-	        		
-	        		if ( value.id == langValue.id ) {
-	        				result = '<span class="phrase-local">' + langValue.frase + '</span> <br/> <span class="phrase-foreign">' + value.frase + '</span>'
-	        				frases.push( result );
-	        		};
-
-	        	});
-
-	        });
-
-	        $scope.result = frases;
-	        
-
-	      }).
-	      error(function() {
-	        console.log( 'error get' );
-	      });
+        }).
+        error(function() {
+          console.log( 'error get' );
+        });
      }
 
   });
