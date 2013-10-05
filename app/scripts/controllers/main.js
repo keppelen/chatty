@@ -2,15 +2,15 @@
 
 angular.module('chattyApp')
   .controller('MainCtrl', function ( $scope, $http ) {
-
-  	localStorage.setItem('chattyLenguage', 'en');
-  	var language = localStorage.getItem('chattyLenguage');
+  	
+  	var languageOrigem = localStorage.getItem('LanguageOrigem'),
+  			languageDestino = localStorage.getItem('LanguageDestino');
     
   	// Lista JSON das frases
-  	$http({method: 'get', url: '/api/frases.json'  }).
+  	$http({method: 'get', url: '/api/' + languageOrigem + '.json'  }).
       success(function( frases ) {
       	$scope.frases = frases;
-        $scope.listLanguage( language )
+        $scope.listLanguage( languageDestino );
       }).
       error(function() {
         console.log( 'error get' );
@@ -18,7 +18,7 @@ angular.module('chattyApp')
 
      // Lista JSON do pais do usuário
      $scope.listLanguage = function( value ) {
-     	$http({method: 'get', url: '/api/' + value + '.json'  }).
+     	$http({method: 'get', url: '/api/' + languageDestino + '.json'  }).
 	      success(function( listLanguage ) {
 
 	        var result = {};
@@ -29,7 +29,7 @@ angular.module('chattyApp')
 	        	$.each( listLanguage, function(i, langValue){
 	        		
 	        		if ( value.id == langValue.id ) {
-	        				result = '<span class="phrase-local">' + value.frase + '</span> <span class="phrase-foreign">' +langValue.frase + '</span>'
+	        				result = '<span class="phrase-local">' + langValue.frase + '</span> <br/> <span class="phrase-foreign">' + value.frase + '</span>'
 	        				frases.push( result );
 	        		};
 

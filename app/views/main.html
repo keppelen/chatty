@@ -2,7 +2,7 @@
   <div class="wrapper">
     <h1 class="logo">Chatty</h1>
     <form action="" class="form-search">
-      <input class="search" type="search" />
+      <input class="search" type="search" ng-model="search"/>
     </form>
     <nav class="nav"></nav>
   </div>
@@ -11,7 +11,7 @@
 <main class="content">
   <div class="wrapper">
     <ul class="phare-list">
-      <li class="phrase-item" ng-repeat="dado in result">
+      <li class="phrase-item" ng-repeat="dado in result | filter:search">
         <a class="phrase-item" href="#" ng-bind-html-unsafe="dado"></a>
       </li>
     </ul>
