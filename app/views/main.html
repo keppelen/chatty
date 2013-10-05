@@ -1,19 +1,44 @@
 <header class="header">
   <div class="wrapper">
-    <h1 class="logo">Chatty</h1>
+    <h1 class="logo"><img src="../img/logo-icon.png" alt=""></h1>
     <form action="" class="form-search">
-      <input class="search" type="search" ng-model="search"/>
+      <input class="search" type="search" ng-model="search" placeholder="start searching for foreign phrases..."/>
     </form>
-    <nav class="nav"></nav>
+    <nav class="nav"><a href="javascript:void(0);">nav</a></nav>
   </div>
 </header>
 
 <main class="content">
-  <div class="wrapper">
-    <ul class="phrase-list">
-      <li class="phrase-item" ng-repeat="dado in result | filter:search">
-        <a class="phrase-link" href="#" ng-bind-html-unsafe="dado"></a>
-      </li>
-    </ul>
+  <div class="core scene">
+    <div class="wrapper">
+      <ul class="phrase-list">
+        <li class="phrase-item" ng-repeat="dado in result | filter:search">
+          <a class="phrase-link" href="#" ng-bind-html-unsafe="dado"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="choose scene">
+    <div class="wrapper">
+      <form action="" class="form-choose">
+        <label for="">Qual país de destino?</label>
+        <select name="" ng-model="user.origem">
+          <option value="en">Inglaterra</option>
+          <option value="en">Canada</option>
+          <option value="en">Estados Unidos</option>
+          <option value="pt-br">Brasil</option>
+        </select>
+        
+        <label for="">Qual seu idioma?</label>
+        <select name="" ng-model="user.aprender">
+          <option value="en">Inglaterra</option>
+          <option value="en">Canada</option>
+          <option value="en">Estados Unidos</option>
+          <option value="pt-br">Brasil</option>
+        </select>
+        
+        <button class="btn btn-save" ng-click="choose(user)">salvar</button>
+      </form>
+    </div>
   </div>
 </main>

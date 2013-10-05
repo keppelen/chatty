@@ -46,4 +46,16 @@ angular.module('chattyApp')
 	      });
      }
 
+
+var nav = document.querySelector('.nav>a');
+var choose = document.querySelector('.choose');
+var save = document.querySelector('.btn-save');
+nav.addEventListener('click', function(e) {
+  choose.className = choose.className + " active"
+});
+save.addEventListener('click', function(e) {
+  choose.className = choose.className - " active"
+});
+
+
   });
