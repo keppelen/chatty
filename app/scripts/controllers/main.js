@@ -10,6 +10,7 @@ angular.module('chattyApp')
     $http({method: 'get', url: '/api/' + languageOrigem + '.json'  }).
       success(function( data ) {
         $scope.languageOrigem = data.phrases;
+        console.log( "oi" );
         $scope.listLanguage( languageDestino );
       }).
       error(function() {
@@ -55,6 +56,13 @@ angular.module('chattyApp')
       }
 
       $scope.getLanguage();
+
+      // Seleciona paises novamente
+      $scope.choose = function( user ) {
+        localStorage.setItem('LanguageOrigem', user.origem );
+        localStorage.setItem('LanguageDestino', user.aprender );
+        window.location = window.location + 'list';
+      };
 
 
     // Nav

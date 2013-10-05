@@ -30,7 +30,6 @@ angular.module('chattyApp')
           $scope.getLanguage();
         });
     }
-
     $scope.getLanguage();
     
   });
