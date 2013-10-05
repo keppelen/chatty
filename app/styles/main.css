@@ -24,18 +24,21 @@ body {
   flex-direction: row;
 }
 .logo {
-  width: 100px;
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 80px;
 }
 .form-search {
-  width: 100%;
-  float:left;
+  margin: 0 70px 0 80px;
 }
 .form-search .search {
   width: 100%;
   padding: 10px;
 }
 .nav {
+  position: absolute;
+  top: 0;
+  right: 20px;
   width: 70px;
-  float: right;
 }
