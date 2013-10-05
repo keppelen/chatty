@@ -12,11 +12,14 @@
 
 ## Dependencies
 
-You're going to need [NodeJS](http://nodejs.org/download/) to run those commands.
+You're going to need:
+
+- [NodeJS](http://nodejs.org/download/)
+- [Ruby Compass](http://compass-style.org/install/)
 
 <!-- ## History -->
 <!-- Check [Release](https://github.com/zenorocha/generator-firefox-os/releases/) list. -->
 
 ## License
 
-[MIT License](http://opensource.org/licenses/MIT)
+[Mozilla License](https://www.mozilla.org/MPL/)
