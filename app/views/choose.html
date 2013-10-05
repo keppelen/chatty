@@ -1,41 +1,21 @@
-<<<<<<< HEAD
 <form action="" class="form-choose">
-  <label for="">Pais origem</label>
-  <select name="" ng-model="user.origem">
-    <option value="en">Inglaterra</option>
-    <option value="en">Canada</option>
-    <option value="en">Estados Unidos</option>
-    <option value="pt-br">Brasil</option>
-  </select>
-  
-  <label for="">Quero aprender</label>
-  <select name="" ng-model="user.aprender">
-    <option value="en">Inglaterra</option>
-    <option value="en">Canada</option>
-    <option value="en">Estados Unidos</option>
-    <option value="pt-br">Brasil</option>
-  </select>
-  
-  <button class="btn" ng-click="choose(user)">Avançar</button>
+	<label for="">{{ ux.paisOrigem }}</label>
+	<select name="" ng-model="user.origem">
+		<option value="">Select</option>
+		<option value="en">Inglaterra</option>
+		<option value="en">Canada</option>
+		<option value="en">Estados Unidos</option>
+		<option value="pt-br">Brasil</option>
+	</select>
+
+	<label for="">{{ ux.paisDestino }}</label>
+	<select name="" ng-model="user.aprender">
+		<option value="">Select</option>
+		<option value="en">Inglaterra</option>
+		<option value="en">Canada</option>
+		<option value="en">Estados Unidos</option>
+		<option value="pt-br">Brasil</option>
+	</select>
+
+	<button class="btn" ng-click="choose(user)">{{ ux.action }}</button>
 </form>
-=======
-<label for="">{{ ux.paisOrigem }}</label>
-<select name="" ng-model="user.origem">
-	<option value="">Select</option>
-	<option value="en">Inglaterra</option>
-	<option value="en">Canada</option>
-	<option value="en">Estados Unidos</option>
-	<option value="pt-br">Brasil</option>
-</select>
-
-<label for="">{{ ux.paisDestino }}</label>
-<select name="" ng-model="user.aprender">
-	<option value="">Select</option>
-	<option value="en">Inglaterra</option>
-	<option value="en">Canada</option>
-	<option value="en">Estados Unidos</option>
-	<option value="pt-br">Brasil</option>
-</select>
-
-<button class="btn" ng-click="choose(user)">{{ ux.action }}</button>
->>>>>>> af2961a5019bf412c2e17de1c8f3074bda33e8e7
