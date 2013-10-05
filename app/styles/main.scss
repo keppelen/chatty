@@ -55,9 +55,8 @@ body {
 }
 .nav {
   position: absolute;
-  top: 0;
-  right: 20px;
-  width: 70px;
+  top: 25px;
+  right: 10px;
 }
 
 
@@ -258,9 +257,14 @@ body {
   display: block;
   width: 100%;
   padding: 20px 50px;
+  margin-bottom: 1em;
   background-color: rgb(241, 196, 15);
   color: #fff;
   font-size: 2em;
+  border-radius: 4px;
+}
+.btn-cancel {
+  background-color: rgb(149, 165, 166);
 }
 .form-choose label {
   display: block;
