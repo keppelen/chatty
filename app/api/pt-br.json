@@ -1,18 +1,42 @@
 [
   {
     "id": 1,
-    "frase": "Quem é você"
+    "frase": "Olá"
   },
   {
     "id": 2,
-    "frase": "Tudo bem"
+    "frase": "Tudo bem?"
   },
   {
     "id": 3,
-    "frase": "Como vai"
+    "frase": "Quantos anos você tem?"
   },
   {
     "id": 4,
-    "frase": "Olá"
+    "frase": "Quanto custa?"
+  },
+  {
+    "id": 5,
+    "frase": "Você poderia me ajudar?"
+  },
+  {
+    "id": 6,
+    "frase": "Desculpe"
+  },
+  {
+    "id": 7,
+    "frase": "Eu não falo seu ..."
+  },
+  {
+    "id": 8,
+    "frase": "Você tem FirefoxOS?"
+  },
+  {
+    "id": 9,
+    "frase": "Onde fica ..."
+  },
+  {
+    "id": 10,
+    "frase": "De onde você é?"
   }
 ]
