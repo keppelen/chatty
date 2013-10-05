@@ -26,7 +26,7 @@ angular.module('chattyApp')
 
           for (var i = 0, len = $scope.languageOrigem.length; i < len; i++) {
             if ($scope.languageOrigem[i].id == langDestino[i].id) {
-              result = '<span class="phrase-local">' + langDestino[i].frase + '</span> <br/> <span class="phrase-foreign">' + $scope.languageOrigem[i].frase + '</span>';
+              result = '<span class="phrase-local">' + $scope.languageOrigem[i].frase + '</span> <br/> <span class="phrase-foreign">' + langDestino[i].frase + '</span>';
               frases.push( result );
             } 
           };
