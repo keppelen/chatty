@@ -14,6 +14,12 @@
 }
 body {
   font: normal normal 10px/1em arial;
+  height: 100%;
+  overflow: hidden;
+}
+.global {
+  height: 100%;
+  overflow: hidden;
 }
 .wrapper {
   width: 100%;
@@ -105,9 +111,12 @@ body {
   z-index: 4;
   min-height: 100%;
   background-color: #fff;
-  -moz-animation: movetop 1.8s 1 2s linear forwards;
-  -webkit-animation: movetop 1.8s 1 2s linear forwards;
-  animation: movetop 1.8s 1 2s linear forwards;
+  -moz-animation: movetop .8s 1 2s linear forwards;
+  -webkit-animation: movetop .8s 1 2s linear forwards;
+  animation: movetop .8s 1 2s linear forwards;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 @-moz-keyframes movetop {
   to {bottom: 100%;}
@@ -126,9 +135,12 @@ body {
   z-index: 4;
   min-height: 100%;
   background-color: #fff;
-  -moz-animation: movepre 1.8s 1 2s linear forwards;
-  -webkit-animation: movepre 1.8s 1 2s linear forwards;
-  animation: movepre 1.8s 1 2s linear forwards;
+  -moz-animation: movepre .8s 1 2s linear forwards;
+  -webkit-animation: movepre .8s 1 2s linear forwards;
+  animation: movepre .8s 1 2s linear forwards;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 @-moz-keyframes movepre {
   to {bottom: 0;}
@@ -141,6 +153,7 @@ body {
 }
 .core {
   top: 90px;
+  overflow: scroll;
 }
 .choose {
   z-index: 3;
@@ -157,19 +170,25 @@ body {
 .logo-c, .logo-t{
   position: relative;
   display: block;
-  margin: 4em auto;
+  margin: 10em auto 0;
   opacity: 0;
   -moz-animation: fadein .8s 1 linear forwards;
   -webkit-animation: fadein .8s 1 linear forwards;
   animation: fadein .8s 1 linear forwards;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .logo-t {
   position: relative;
   display: block;
-  margin: 1em auto;
+  margin: 3em auto 0;
   -moz-animation: movein 1.3s 1 linear forwards;
   -webkit-animation: movein 1.3s 1 linear forwards;
   animation: movein 1.3s 1 linear forwards;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 @-moz-keyframes fadein {
   to {opacity: 1;}
@@ -250,8 +269,8 @@ body {
   margin: 0 0 .5em;
 }
 .pre-choose .form-choose {
-  width: 60%;
-  margin: 2em auto 0;
+  width: 80%;
+  margin: 4em auto 0;
 }
 .pre-choose label {color: #777;}
 select {border: 1px solid #e7e7e7;}
