@@ -2,48 +2,42 @@
 
 angular.module('chattyApp')
   .controller('MainCtrl', function ( $scope, $http ) {
-  	
-  	var languageOrigem = localStorage.getItem('LanguageOrigem'),
-  			languageDestino = localStorage.getItem('LanguageDestino');
     
-  	// Lista JSON das frases
-  	$http({method: 'get', url: '/api/' + languageOrigem + '.json'  }).
-      success(function( frases ) {
-      	$scope.frases = frases;
+    var languageOrigem = localStorage.getItem('LanguageOrigem'),
+        languageDestino = localStorage.getItem('LanguageDestino');
+    
+    // Lista JSON das frases
+    $http({method: 'get', url: '/api/' + languageOrigem + '.json'  }).
+      success(function( data ) {
+        console.log( data.phrases );
+        $scope.languageOrigem = data.phrases;
         $scope.listLanguage( languageDestino );
       }).
       error(function() {
-        console.log( 'error get' );
+        // error
       });
 
      // Lista JSON do pais do usuário
      $scope.listLanguage = function( value ) {
-     	$http({method: 'get', url: '/api/' + languageDestino + '.json'  }).
-	      success(function( listLanguage ) {
+      $http({method: 'get', url: '/api/' + languageDestino + '.json'  }).
+        success(function( langDestino ) {
 
-	        var result = {};
-	        var frases = []
+          var result = {},
+              frases = [];
 
-	        $.each($scope.frases, function(i, value){
+          for (var i = 0, len = $scope.languageOrigem.length; i < len; i++) {
+            if ($scope.languageOrigem[i].id == langDestino.phrases[i].id) {
+              result = '<span class="phrase-local">' + $scope.languageOrigem[i].frase + '</span> <br/> <span class="phrase-foreign">' + langDestino.phrases[i].frase + '</span>';
+              frases.push( result );
+            } 
+          };
 
-	        	$.each( listLanguage, function(i, langValue){
-	        		
-	        		if ( value.id == langValue.id ) {
-	        				result = '<span class="phrase-local">' + langValue.frase + '</span> <br/> <span class="phrase-foreign">' + value.frase + '</span>'
-	        				frases.push( result );
-	        		};
+          $scope.result = frases;
 
-	        	});
-
-	        });
-
-	        $scope.result = frases;
-	        
-
-	      }).
-	      error(function() {
-	        console.log( 'error get' );
-	      });
+        }).
+        error(function() {
+          // error
+        });
      }
 
 
@@ -56,6 +50,4 @@ nav.addEventListener('click', function(e) {
 save.addEventListener('click', function(e) {
   choose.className = choose.className - " active"
 });
-
-
   });
