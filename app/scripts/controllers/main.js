@@ -8,36 +8,34 @@ angular.module('chattyApp')
     
     // Lista JSON das frases
     $http({method: 'get', url: '/api/' + languageOrigem + '.json'  }).
-      success(function( frases ) {
-        $scope.frases = frases;
+      success(function( data ) {
+        $scope.languageOrigem = data;
         $scope.listLanguage( languageDestino );
       }).
       error(function() {
-        console.log( 'error get' );
+        // error
       });
 
      // Lista JSON do pais do usuário
      $scope.listLanguage = function( value ) {
       $http({method: 'get', url: '/api/' + languageDestino + '.json'  }).
-        success(function( listLanguage ) {
+        success(function( langDestino ) {
 
-          var result = {};
-          var frases = []
+          var result = {},
+              frases = [];
 
-          for (var i = 0, len = $scope.frases.length; i < len; i++) {
-            if ($scope.frases[i].id == listLanguage[i].id) {
-              result = '<span class="phrase-local">' + listLanguage[i].frase + '</span> <br/> <span class="phrase-foreign">' + $scope.frases[i].frase + '</span>';
+          for (var i = 0, len = $scope.languageOrigem.length; i < len; i++) {
+            if ($scope.languageOrigem[i].id == langDestino[i].id) {
+              result = '<span class="phrase-local">' + langDestino[i].frase + '</span> <br/> <span class="phrase-foreign">' + $scope.languageOrigem[i].frase + '</span>';
               frases.push( result );
             } 
-          }
+          };
+
           $scope.result = frases;
-        
-          
 
         }).
         error(function() {
-          console.log( 'error get' );
+          // error
         });
      }
-
   });

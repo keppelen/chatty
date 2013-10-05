@@ -12,7 +12,6 @@ angular.module('chattyApp')
     $scope.choose = function( user ) {
   		localStorage.setItem('LanguageOrigem', user.origem );
   		localStorage.setItem('LanguageDestino', user.aprender );
-  		window.location = window.location + 'list'
-  	}
-    
+  		window.location = window.location + 'list';
+  	};
   });
