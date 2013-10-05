@@ -44,6 +44,7 @@
   "ux": {
     "paisOrigem": "Pais Origigem",
     "paisDestino": "Pais Destino",
-    "action": "save"
+    "action": "save",
+    "search": "iniciar la búsqueda de frases extranjeras ..."
   }
 }

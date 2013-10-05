@@ -2,7 +2,7 @@
   <div class="wrapper">
     <h1 class="logo"><img src="../img/logo-icon.png" alt=""></h1>
     <form action="" class="form-search">
-      <input class="search" type="search" ng-model="search" placeholder="start searching for foreign phrases..."/>
+      <input class="search" type="search" ng-model="search" placeholder="{{ ux.search }}"/>
     </form>
     <nav class="nav"><a href="javascript:void(0);">nav</a></nav>
   </div>
@@ -21,25 +21,27 @@
   <div class="choose scene">
     <div class="wrapper">
       <form action="" class="form-choose">
-        <label for="">Qual país de destino?</label>
+        <label for="">{{ ux.paisOrigem }}</label>
         <select name="" ng-model="user.origem">
           <option value=""></option>
           <option value="en">Inglaterra</option>
           <option value="en">Canada</option>
+          <option value="es">Espanha</option>
           <option value="en">Estados Unidos</option>
           <option value="pt">Brasil</option>
         </select>
 
-        <label for="">Qual seu idioma?</label>
+        <label for="">{{ ux.paisDestino }}</label>
         <select name="" ng-model="user.aprender">
           <option value=""></option>
           <option value="en">Inglaterra</option>
           <option value="en">Canada</option>
+          <option value="es">Espanha</option>
           <option value="en">Estados Unidos</option>
           <option value="pt">Brasil</option>
         </select>
 
-        <button class="btn btn-save" ng-click="choose(user)">salvar</button>
+        <button class="btn btn-save" ng-click="choose(user)">{{ ux.action }}</button>
       </form>
     </div>
   </div>
