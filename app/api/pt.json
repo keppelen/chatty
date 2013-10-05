@@ -1,0 +1,49 @@
+{
+  "phrases": [
+    {
+      "id": 1,
+      "frase": "Olá"
+    },
+    {
+      "id": 2,
+      "frase": "Tudo bem?"
+    },
+    {
+      "id": 3,
+      "frase": "Quantos anos você tem?"
+    },
+    {
+      "id": 4,
+      "frase": "Quanto custa?"
+    },
+    {
+      "id": 5,
+      "frase": "Você poderia me ajudar?"
+    },
+    {
+      "id": 6,
+      "frase": "Desculpe"
+    },
+    {
+      "id": 7,
+      "frase": "Eu não falo seu ..."
+    },
+    {
+      "id": 8,
+      "frase": "Você tem FirefoxOS?"
+    },
+    {
+      "id": 9,
+      "frase": "Onde fica ..."
+    },
+    {
+      "id": 10,
+      "frase": "De onde você é?"
+    }
+  ],
+  "ux": {
+    "paisOrigem": "Pais Origigem",
+    "paisDestino": "Pais Destino",
+    "action": "salvar"
+  }
+}
