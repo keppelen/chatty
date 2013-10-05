@@ -9,7 +9,8 @@ angular.module('chattyApp')
     // Lista JSON das frases
     $http({method: 'get', url: '/api/' + languageOrigem + '.json'  }).
       success(function( data ) {
-        $scope.languageOrigem = data;
+        console.log( data.phrases );
+        $scope.languageOrigem = data.phrases;
         $scope.listLanguage( languageDestino );
       }).
       error(function() {
@@ -25,8 +26,8 @@ angular.module('chattyApp')
               frases = [];
 
           for (var i = 0, len = $scope.languageOrigem.length; i < len; i++) {
-            if ($scope.languageOrigem[i].id == langDestino[i].id) {
-              result = '<span class="phrase-local">' + $scope.languageOrigem[i].frase + '</span> <br/> <span class="phrase-foreign">' + langDestino[i].frase + '</span>';
+            if ($scope.languageOrigem[i].id == langDestino.phrases[i].id) {
+              result = '<span class="phrase-local">' + $scope.languageOrigem[i].frase + '</span> <br/> <span class="phrase-foreign">' + langDestino.phrases[i].frase + '</span>';
               frases.push( result );
             } 
           };

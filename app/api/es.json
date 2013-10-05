@@ -1,42 +1,49 @@
-[
-  {
-    "id": 1,
-    "frase": "¡Hola"
-  },
-  {
-    "id": 2,
-    "frase": "¿De acuerdo?"
-  },
-  {
-    "id": 3,
-    "frase": "¿Cuántos años tienes?"
-  },
-  {
-    "id": 4,
-    "frase": "¿Cuánto?"
-  },
-  {
-    "id": 5,
-    "frase": "¿Podría usted ayudarme?"
-  },
-  {
-    "id": 6,
-    "frase": "triste"
-  },
-  {
-    "id": 7,
-    "frase": "No hablo su ..."
-  },
-  {
-    "id": 8,
-    "frase": "Usted tiene FirefoxOS?"
-  },
-  {
-    "id": 9,
-    "frase": "¿Dónde está ..."
-  },
-  {
-    "id": 10,
-    "frase": "¿De dónde eres?"
+{
+  "phrases": [
+    {
+      "id": 1,
+      "frase": "¡Hola"
+    },
+    {
+      "id": 2,
+      "frase": "¿De acuerdo?"
+    },
+    {
+      "id": 3,
+      "frase": "¿Cuántos años tienes?"
+    },
+    {
+      "id": 4,
+      "frase": "¿Cuánto?"
+    },
+    {
+      "id": 5,
+      "frase": "¿Podría usted ayudarme?"
+    },
+    {
+      "id": 6,
+      "frase": "triste"
+    },
+    {
+      "id": 7,
+      "frase": "No hablo su ..."
+    },
+    {
+      "id": 8,
+      "frase": "Usted tiene FirefoxOS?"
+    },
+    {
+      "id": 9,
+      "frase": "¿Dónde está ..."
+    },
+    {
+      "id": 10,
+      "frase": "¿De dónde eres?"
+    }
+  ],
+  "ux": {
+    "paisOrigem": "Pais Origigem",
+    "paisDestino": "Pais Destino",
+    "action": "save"
   }
-]
+}
