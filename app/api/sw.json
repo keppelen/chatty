@@ -1,0 +1,51 @@
+{
+  "phrases": [
+    {
+      "id": 1,
+      "frase": "Habari"
+    },
+    {
+      "id": 2,
+      "frase": "Habari yako?"
+    },
+    {
+      "id": 3,
+      "frase": "Uko na miaka ngapi?"
+    },
+    {
+      "id": 4,
+      "frase": "Pesa ngapi?"
+    },
+    {
+      "id": 5,
+      "frase": "Nisaidie?"
+    },
+    {
+      "id": 6,
+      "frase": "Samahani"
+    },
+    {
+      "id": 7,
+      "frase": "Sielewi hiyo lugha ..."
+    },
+    {
+      "id": 8,
+      "frase": "Uko na FirefoxOS?"
+    },
+    {
+      "id": 9,
+      "frase": "Yuko wapi(Person) / (Place name) ni wapi"
+    },
+    {
+      "id": 10,
+      "frase": "Unatoka wapi?"
+    }
+  ],
+  "ux": {
+    "paisOrigem": "Nchi yako",
+    "paisDestino": "Unaenda nchi gani",
+    "action": "Kuhifadhi",
+    "search": "Anza kutafuta misemo ya kigeni...",
+    "actionCancel": "Futa Mchakato"
+  }
+}

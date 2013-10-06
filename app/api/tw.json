@@ -1,0 +1,51 @@
+{
+  "phrases": [
+    {
+      "id": 1,
+      "frase": "嗨"
+    },
+    {
+      "id": 2,
+      "frase": "你好嗎？"
+    },
+    {
+      "id": 3,
+      "frase": "你幾歲了呢？"
+    },
+    {
+      "id": 4,
+      "frase": "多少？"
+    },
+    {
+      "id": 5,
+      "frase": "你可以幫我嗎?"
+    },
+    {
+      "id": 6,
+      "frase": "抱歉"
+    },
+    {
+      "id": 7,
+      "frase": "我不會說 ..."
+    },
+    {
+      "id": 8,
+      "frase": "你擁有 FirefoxOS 嗎?"
+    },
+    {
+      "id": 9,
+      "frase": "... 在哪裡？"
+    },
+    {
+      "id": 10,
+      "frase": "你來自哪裡呢？"
+    }
+  ],
+  "ux": {
+    "paisOrigem": "您的國家",
+    "paisDestino": "您將抵達的國家",
+    "action": "儲存",
+    "search": "開始尋找外語詞彙",
+    "actionCancel": "取消"
+  }
+}
