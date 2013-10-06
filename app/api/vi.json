@@ -1,0 +1,50 @@
+{
+  "phrases": [
+    {
+      "id": 1,
+      "frase": "Xin chào"
+    },
+    {
+      "id": 2,
+      "frase": "thế nào?"
+    },
+    {
+      "id": 3,
+      "frase": "Bạn bao nhiêu tuổi?"
+    },
+    {
+      "id": 4,
+      "frase": "Giá bao nhiêu?"
+    },
+    {
+      "id": 5,
+      "frase": "Bạn có thể giúp tôi không?"
+    },
+    {
+      "id": 6,
+      "frase": "xin lỗi"
+    },
+    {
+      "id": 7,
+      "frase": "Tôi không nói tiếng ..."
+    },
+    {
+      "id": 8,
+      "frase": "Bạn có FirefoxOS không?"
+    },
+    {
+      "id": 9,
+      "frase": "... ở đâu?"
+    },
+    {
+      "id": 10,
+      "frase": "Bạn đến từ đâu?"
+    }
+  ],
+  "ux": {
+    "paisOrigem": "Đát nước của bạn",
+    "paisDestino": "Nơi đến",
+    "action": "lưu",
+    "search": "bắt đầu tìm kiếm cụm từ..."
+  }
+}

@@ -6,7 +6,7 @@
     },
     {
       "id": 2,
-      "frase": "¿De acuerdo?"
+      "frase": "¿cómo estás?"
     },
     {
       "id": 3,
@@ -14,23 +14,23 @@
     },
     {
       "id": 4,
-      "frase": "¿Cuánto?"
+      "frase": "¿Cuánto cuesta?"
     },
     {
       "id": 5,
-      "frase": "¿Podría usted ayudarme?"
+      "frase": "¿Puedes ayudarme?"
     },
     {
       "id": 6,
-      "frase": "triste"
+      "frase": "Lo siento"
     },
     {
       "id": 7,
-      "frase": "No hablo su ..."
+      "frase": "No hablo ..."
     },
     {
       "id": 8,
-      "frase": "Usted tiene FirefoxOS?"
+      "frase": "¿Tienes FirefoxOS?"
     },
     {
       "id": 9,
@@ -42,9 +42,9 @@
     }
   ],
   "ux": {
-    "paisOrigem": "Pais Origigem",
+    "paisOrigem": "Pais Origigen",
     "paisDestino": "Pais Destino",
-    "action": "save",
+    "action": "Guardar",
     "search": "iniciar la búsqueda de frases extranjeras ..."
   }
 }
