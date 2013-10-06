@@ -45,6 +45,7 @@
     "paisOrigem": "Pais Origigem",
     "paisDestino": "Pais Destino",
     "action": "salvar",
-    "search": "começar a procurar por frases estrangeiras ..."
+    "search": "começar a procurar por frases estrangeiras ...",
+    "actionCancel": "cancel"
   }
 }

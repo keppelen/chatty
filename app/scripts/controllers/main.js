@@ -62,5 +62,16 @@ angular.module('chattyApp')
         localStorage.setItem('LanguageDestino', user.aprender );
         window.location = window.location + 'list';
       };
+
+      var nav = document.querySelector('.nav>a');
+      var choose = document.querySelector('.choose');
+      var save = document.querySelector('.btn-save');
+      nav.addEventListener('click', function(e) {
+        choose.className = choose.className + " active"
+      });
+      
+      save.addEventListener('click', function(e) {
+        choose.className = choose.className - " active"
+      });
     
   });

@@ -364,9 +364,12 @@ body {
 /* line 266, main.scss */
 .btn-cancel {
   background-color: #95a5a6;
+  text-align: center;
+  font-size: 2em;
+  padding: 25px 50px;
 }
 
-/* line 269, main.scss */
+/* line 272, main.scss */
 .form-choose label {
   display: block;
   font-size: 1.6em;
@@ -374,18 +377,18 @@ body {
   margin: 0 0 .5em;
 }
 
-/* line 275, main.scss */
+/* line 278, main.scss */
 .pre-choose .form-choose {
   width: 80%;
   margin: 4em auto 0;
 }
 
-/* line 279, main.scss */
+/* line 282, main.scss */
 .pre-choose label, .config label {
   color: #777;
 }
 
-/* line 280, main.scss */
+/* line 283, main.scss */
 select {
   border: 1px solid #e7e7e7;
 }

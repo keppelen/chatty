@@ -1,22 +1,24 @@
-<div class="wrapper">
-<form action="" class="form-choose config">
-  <label for="">{{ ux.paisOrigem }}</label>
-  <select name="" ng-model="user.origem">
-    <option value="">Select</option>
-    <option value="es">Espanha</option>
-    <option value="en">Estados Unidos</option>
-    <option value="pt">Brasil</option>
-  </select>
+<div class="choose scene">
+  <div class="wrapper">
+  <form action="" class="form-choose config">
+    <label for="">{{ ux.paisOrigem }}</label>
+    <select name="" ng-model="user.origem">
+      <option value="">Select</option>
+      <option value="es">Espanha</option>
+      <option value="en">Estados Unidos</option>
+      <option value="pt">Brasil</option>
+    </select>
 
-  <label for="">{{ ux.paisDestino }}</label>
-  <select name="" ng-model="user.aprender">
-    <option value="">Select</option>
-    <option value="es">Espanha</option>
-    <option value="en">Estados Unidos</option>
-    <option value="pt">Brasil</option>
-  </select>
+    <label for="">{{ ux.paisDestino }}</label>
+    <select name="" ng-model="user.aprender">
+      <option value="">Select</option>
+      <option value="es">Espanha</option>
+      <option value="en">Estados Unidos</option>
+      <option value="pt">Brasil</option>
+    </select>
 
-  <button class="btn btn-save" ng-click="choose(user)">{{ ux.action }}</button>
-  <button class="btn btn-cancel" ng-click="choose(user)">{{ ux.action }}</button>
-</form>
+    <button class="btn btn-save" ng-click="choose(user)">{{ ux.action }}</button>
+    <button class="btn btn-cancel" ng-click="choose(user)">{{ ux.action }}</button>
+  </form>
+  </div>
 </div>

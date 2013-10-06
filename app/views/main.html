@@ -4,7 +4,7 @@
     <form action="" class="form-search">
       <input class="search" type="search" ng-model="search" placeholder="{{ ux.search }}"/>
     </form>
-    <nav class="nav"><a href="/#/config"><img src="img/icon-nav.png" alt=""></a></nav>
+    <nav class="nav"><a href="javascript:void(0);" id="nav"><img src="img/icon-nav.png" alt=""></a></nav>
   </div>
 </header>
 
@@ -16,6 +16,30 @@
           <a class="phrase-link" href="#" ng-bind-html-unsafe="dado"></a>
         </li>
       </ul>
+    </div>
+  </div>
+  <div class="choose scene">
+    <div class="wrapper">
+      <form action="" class="form-choose">
+        <label for="">{{ ux.paisOrigem }}</label>
+        <select name="" ng-model="user.origem">
+          <option value="">Select</option>
+          <option value="es">Espanha</option>
+          <option value="en">Estados Unidos</option>
+          <option value="pt">Brasil</option>
+        </select>
+
+        <label for="">{{ ux.paisDestino }}</label>
+        <select name="" ng-model="user.aprender">
+          <option value="">Select</option>
+          <option value="es">Espanha</option>
+          <option value="en">Estados Unidos</option>
+          <option value="pt">Brasil</option>
+        </select>
+
+        <button class="btn btn-save" ng-click="choose(user)">{{ ux.action }}</button>
+        <a href="/" class="btn btn-cancel">{{ ux.actionCancel }}</a>
+      </form>
     </div>
   </div>
 </main>
