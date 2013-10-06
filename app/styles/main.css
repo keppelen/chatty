@@ -1,44 +1,391 @@
 /* app style */
+/* line 3, main.scss */
 * {
   padding: 0;
   margin: 0;
   bottom: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
+
+/* line 15, main.scss */
 body {
   font: normal normal 10px/1em arial;
+  height: 100%;
+  overflow: hidden;
 }
+
+/* line 20, main.scss */
+.global {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 24, main.scss */
 .wrapper {
   width: 100%;
   padding: 0 20px;
 }
 
 /* header */
+/* line 30, main.scss */
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   background: #e74c3c;
   padding: 20px 0;
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-
-  display: flex;
-  flex-direction: row;
+  height: 90px;
 }
+
+/* line 40, main.scss */
 .logo {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 20px;
   width: 80px;
 }
+
+/* line 46, main.scss */
 .form-search {
-  margin: 0 70px 0 80px;
+  margin: 0 40px 0 55px;
 }
+/* line 48, main.scss */
 .form-search .search {
   width: 100%;
+  height: 50px;
   padding: 10px;
+  border-radius: 4px;
+  font-size: 1.6em;
 }
+
+/* line 56, main.scss */
 .nav {
   position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+/*.content {
+  position: absolute;
+  z-index: 3;
+  top: 90px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}*/
+/* list */
+/* line 72, main.scss */
+.phrase-list {
+  margin: 0 -20px;
+}
+
+/* line 75, main.scss */
+.phrase-link {
+  display: block;
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* line 80, main.scss */
+.phrase-item:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* line 83, main.scss */
+.phrase-link:hover, .phrase-link:focus {
+  background-color: #ecf0f1;
+}
+
+/* line 86, main.scss */
+.phrase-local {
+  display: block;
+  font-size: 1.2em;
+  color: #777;
+}
+
+/* line 91, main.scss */
+.phrase-foreign {
+  font-size: 1.8em;
+  color: #2b2b2b;
+}
+
+/* scenes */
+/* line 97, main.scss */
+.scene {
+  position: fixed;
   top: 0;
-  right: 20px;
-  width: 70px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* line 105, main.scss */
+.loading {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  min-height: 100%;
+  background-color: #fff;
+  -moz-animation: movetop .8s 1 2s linear forwards;
+  -webkit-animation: movetop .8s 1 2s linear forwards;
+  animation: movetop .8s 1 2s linear forwards;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+@-moz-keyframes movetop {
+  /* line 121, main.scss */
+  to {
+    bottom: 100%;
+  }
+}
+
+@-webkit-keyframes movetop {
+  /* line 124, main.scss */
+  to {
+    bottom: 100%;
+  }
+}
+
+@keyframes movetop {
+  /* line 127, main.scss */
+  to {
+    bottom: 100%;
+  }
+}
+
+/* line 129, main.scss */
+.pre-choose {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  min-height: 100%;
+  background-color: #fff;
+  -moz-animation: movepre .8s 1 2s linear forwards;
+  -webkit-animation: movepre .8s 1 2s linear forwards;
+  animation: movepre .8s 1 2s linear forwards;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+@-moz-keyframes movepre {
+  /* line 145, main.scss */
+  to {
+    bottom: 0;
+  }
+}
+
+@-webkit-keyframes movepre {
+  /* line 148, main.scss */
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes movepre {
+  /* line 151, main.scss */
+  to {
+    bottom: 0;
+  }
+}
+
+/* line 153, main.scss */
+.core {
+  top: 90px;
+  overflow: scroll;
+}
+
+/* line 157, main.scss */
+.choose {
+  z-index: 3;
+  min-width: 100%;
+  background-color: #e74c3c;
+  left: 100%;
+  transition: all .3s linear;
+}
+
+/* line 164, main.scss */
+.choose.active {
+  left: 0;
+}
+
+/* loading */
+/* line 169, main.scss */
+.logo-c, .logo-t {
+  position: relative;
+  display: block;
+  margin: 10em auto 0;
+  opacity: 0;
+  -moz-animation: fadein .8s 1 linear forwards;
+  -webkit-animation: fadein .8s 1 linear forwards;
+  animation: fadein .8s 1 linear forwards;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* line 181, main.scss */
+.logo-t {
+  position: relative;
+  display: block;
+  margin: 3em auto 0;
+  -moz-animation: movein 1.3s 1 linear forwards;
+  -webkit-animation: movein 1.3s 1 linear forwards;
+  animation: movein 1.3s 1 linear forwards;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+@-moz-keyframes fadein {
+  /* line 193, main.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* line 196, main.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  /* line 199, main.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes movein {
+  /* line 202, main.scss */
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+
+  /* line 206, main.scss */
+  60% {
+    top: -1.2em;
+    opacity: .2;
+  }
+
+  /* line 210, main.scss */
+  100% {
+    top: -1.5em;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes movein {
+  /* line 216, main.scss */
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+
+  /* line 220, main.scss */
+  60% {
+    top: -1.2em;
+    opacity: .2;
+  }
+
+  /* line 224, main.scss */
+  100% {
+    top: -1.5em;
+    opacity: 1;
+  }
+}
+
+@keyframes movein {
+  /* line 230, main.scss */
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+
+  /* line 234, main.scss */
+  60% {
+    top: -1.2em;
+    opacity: .2;
+  }
+
+  /* line 238, main.scss */
+  100% {
+    top: -1.5em;
+    opacity: 1;
+  }
+}
+
+/* choose */
+/* line 245, main.scss */
+.form-choose {
+  padding: 50px 0;
+}
+
+/* line 248, main.scss */
+.form-choose input, .form-choose select {
+  display: block;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.6em;
+  border-radius: 4px;
+}
+
+/* line 256, main.scss */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 20px 50px;
+  margin-bottom: 1em;
+  background-color: #f1c40f;
+  color: #fff;
+  font-size: 2em;
+  border-radius: 4px;
+}
+
+/* line 266, main.scss */
+.btn-cancel {
+  background-color: #95a5a6;
+}
+
+/* line 269, main.scss */
+.form-choose label {
+  display: block;
+  font-size: 1.6em;
+  color: #fff;
+  margin: 0 0 .5em;
+}
+
+/* line 275, main.scss */
+.pre-choose .form-choose {
+  width: 80%;
+  margin: 4em auto 0;
+}
+
+/* line 279, main.scss */
+.pre-choose label, .config label {
+  color: #777;
+}
+
+/* line 280, main.scss */
+select {
+  border: 1px solid #e7e7e7;
 }

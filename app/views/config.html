@@ -1,10 +1,5 @@
-<section class="loading">
-	<img class="logo-c" src="img/chatty_welcome_c.svg" alt="">
-	<img class="logo-t" src="img/chatty_welcome_t.svg" alt="">
-</section>
-
-<section class="pre-choose">
-<form action="" class="form-choose">
+<div class="wrapper">
+<form action="" class="form-choose config">
   <label for="">{{ ux.paisOrigem }}</label>
   <select name="" ng-model="user.origem">
     <option value="">Select</option>
@@ -22,5 +17,6 @@
   </select>
 
   <button class="btn btn-save" ng-click="choose(user)">{{ ux.action }}</button>
+  <button class="btn btn-cancel" ng-click="choose(user)">{{ ux.action }}</button>
 </form>
-</section>
+</div>
