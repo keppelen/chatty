@@ -1,13 +1,12 @@
 {
   "name": "Chatty",
-  "description": "Description App",
-  "launch_path": "/",
+  "description": "An app to learn the most common phrases in many languages.",
+  "launch_path": "/index.html",
   "icons": {
     "128": "/img/icon-128.png"
   },
   "developer": {
-    "name": "Mozilla Team Brasil",
-    "url": "http://chatty.com"
+    "name": "Mozilla Community Brasil"
   },
   "default_locale": "en"
 }
