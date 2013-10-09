@@ -8,9 +8,9 @@
   outline: 0;
   list-style: none;
   text-decoration: none;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* line 15, main.scss */
@@ -88,37 +88,34 @@ body {
 }
 
 /* line 75, main.scss */
-.phrase-link {
+.phrase {
   display: block;
   padding: 20px;
-  border-bottom: 1px solid #e7e7e7;
 }
 
-/* line 80, main.scss */
+/* line 79, main.scss */
 .phrase-item:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-/* line 83, main.scss */
-.phrase-link:hover, .phrase-link:focus {
-  background-color: #ecf0f1;
-}
-
-/* line 86, main.scss */
+/*.phrase-link:hover, .phrase-link:focus {
+  background-color: rgb(236, 240, 241);
+}*/
+/* line 85, main.scss */
 .phrase-local {
   display: block;
   font-size: 1.2em;
   color: #777;
 }
 
-/* line 91, main.scss */
+/* line 90, main.scss */
 .phrase-foreign {
   font-size: 1.8em;
   color: #2b2b2b;
 }
 
 /* scenes */
-/* line 97, main.scss */
+/* line 96, main.scss */
 .scene {
   position: fixed;
   top: 0;
@@ -128,7 +125,7 @@ body {
   z-index: 2;
 }
 
-/* line 105, main.scss */
+/* line 104, main.scss */
 .loading {
   position: absolute;
   bottom: 0;
@@ -146,27 +143,27 @@ body {
 }
 
 @-moz-keyframes movetop {
-  /* line 121, main.scss */
+  /* line 120, main.scss */
   to {
     bottom: 100%;
   }
 }
 
 @-webkit-keyframes movetop {
-  /* line 124, main.scss */
+  /* line 123, main.scss */
   to {
     bottom: 100%;
   }
 }
 
 @keyframes movetop {
-  /* line 127, main.scss */
+  /* line 126, main.scss */
   to {
     bottom: 100%;
   }
 }
 
-/* line 129, main.scss */
+/* line 128, main.scss */
 .pre-choose {
   position: absolute;
   bottom: -100%;
@@ -184,36 +181,37 @@ body {
 }
 
 @-moz-keyframes movepre {
-  /* line 145, main.scss */
+  /* line 144, main.scss */
   to {
     bottom: 0;
   }
 }
 
 @-webkit-keyframes movepre {
-  /* line 148, main.scss */
+  /* line 147, main.scss */
   to {
     bottom: 0;
   }
 }
 
 @keyframes movepre {
-  /* line 151, main.scss */
+  /* line 150, main.scss */
   to {
     bottom: 0;
   }
 }
 
-/* line 153, main.scss */
+/* line 152, main.scss */
 .core {
   top: 90px;
   overflow: scroll;
 }
 
-/* line 157, main.scss */
+/* line 156, main.scss */
 .choose {
   z-index: 3;
   min-width: 100%;
+  overflow-y: auto;
   background-color: #e74c3c;
   left: 100%;
   transition: all .3s linear;

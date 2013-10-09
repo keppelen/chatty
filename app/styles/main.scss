@@ -8,9 +8,9 @@
   outline: 0;
   list-style: none;
   text-decoration: none;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
   font: normal normal 10px/1em arial;
@@ -72,17 +72,16 @@ body {
 .phrase-list {
   margin: 0 -20px;
 }
-.phrase-link {
+.phrase {
   display: block;
   padding: 20px;
-  border-bottom: 1px solid #e7e7e7;
 }
 .phrase-item:nth-child(even) {
   background-color: #f9f9f9;
 }
-.phrase-link:hover, .phrase-link:focus {
+/*.phrase-link:hover, .phrase-link:focus {
   background-color: rgb(236, 240, 241);
-}
+}*/
 .phrase-local {
   display: block;
   font-size: 1.2em;
@@ -157,6 +156,7 @@ body {
 .choose {
   z-index: 3;
   min-width: 100%;
+  overflow-y: auto;
   background-color: #e74c3c;
   left: 100%;
   transition:  all .3s linear;

@@ -6,7 +6,7 @@
     },
     {
       "id": 2,
-      "frase": "Alright?"
+      "frase": "How are you?"
     },
     {
       "id": 3,
@@ -18,7 +18,7 @@
     },
     {
       "id": 5,
-      "frase": "Could you help me?"
+      "frase": "Can you help me?"
     },
     {
       "id": 6,
@@ -26,11 +26,11 @@
     },
     {
       "id": 7,
-      "frase": "I do not speak your ..."
+      "frase": "I don't speak ..."
     },
     {
       "id": 8,
-      "frase": "You have FirefoxOS?"
+      "frase": "Do you have FirefoxOS?"
     },
     {
       "id": 9,
@@ -42,9 +42,10 @@
     }
   ],
   "ux": {
-    "paisOrigem": "Your country",
+    "paisOrigem": "My country",
     "paisDestino": "Destination Country",
     "action": "save",
-    "search": "start searching for foreign phrases..."
+    "search": "start searching for foreign phrases...",
+    "actionCancel": "cancel"
   }
 }

@@ -18,7 +18,7 @@
     },
     {
       "id": 5,
-      "frase": "Could you help me?"
+      "frase": "Can you help me?"
     },
     {
       "id": 6,
@@ -42,7 +42,7 @@
     }
   ],
   "ux": {
-    "paisOrigem": "Your country",
+    "paisOrigem": "My country",
     "paisDestino": "Destination Country",
     "action": "save",
     "search": "start searching for foreign phrases...",

@@ -42,7 +42,7 @@
     }
   ],
   "ux": {
-    "paisOrigem": "Pais Origigem",
+    "paisOrigem": "País de origem",
     "paisDestino": "Pais Destino",
     "action": "salvar",
     "search": "começar a procurar por frases estrangeiras ...",
