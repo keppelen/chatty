@@ -13,7 +13,7 @@
     <div class="wrapper">
       <ul class="phrase-list">
         <li class="phrase-item" ng-repeat="dado in result | filter:search">
-          <a class="phrase-link" href="#" ng-bind-html-unsafe="dado"></a>
+          <a class="phrase-link play" href="" ng-click="play()" ng-bind-html-unsafe="dado"></a>
         </li>
       </ul>
     </div>
