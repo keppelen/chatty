@@ -1,6 +1,6 @@
 # Chatty
 
-![](http://f.cl.ly/items/273M3o3B0b0b2j2I390g/974514_653004384752140_117700686_n.jpg)
+![](http://f.cl.ly/items/081Q3U2C1r2E2A1K1P2s/Chatty%20Git-10.png)
 
 > Description App
 
