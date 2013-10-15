@@ -1,6 +1,6 @@
 # Chatty
 
-![](http://cl.ly/image/0E0S2j3o2F0r/firefox-yeoman.jpg)
+![](http://f.cl.ly/items/273M3o3B0b0b2j2I390g/974514_653004384752140_117700686_n.jpg)
 
 > Description App
 
