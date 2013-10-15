@@ -2,8 +2,6 @@
 
 ![](http://f.cl.ly/items/273M3o3B0b0b2j2I390g/974514_653004384752140_117700686_n.jpg)
 
-> Description App
-
 ## Getting Started
 
 1. Install: `npm install && bower install`
