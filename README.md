@@ -2,8 +2,6 @@
 
 ![](http://f.cl.ly/items/081Q3U2C1r2E2A1K1P2s/Chatty%20Git-10.png)
 
-> Description App
-
 ## Getting Started
 
 1. Install: `npm install && bower install`
