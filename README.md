@@ -1,8 +1,6 @@
 # Chatty
 
-![](http://cl.ly/image/0E0S2j3o2F0r/firefox-yeoman.jpg)
-
-> Description App
+![](http://f.cl.ly/items/081Q3U2C1r2E2A1K1P2s/Chatty%20Git-10.png)
 
 ## Getting Started
 
