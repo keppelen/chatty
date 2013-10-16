@@ -43,9 +43,9 @@
   ],
   "ux": {
     "paisOrigem": "País de origem",
-    "paisDestino": "Pais Destino",
-    "action": "salvar",
-    "search": "começar a procurar por frases estrangeiras ...",
-    "actionCancel": "cancel"
+    "paisDestino": "País Destino",
+    "action": "Salvar",
+    "search": "Começar a procurar por frases estrangeiras ...",
+    "actionCancel": "Cancelar"
   }
 }
