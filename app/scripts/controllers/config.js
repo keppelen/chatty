@@ -2,7 +2,7 @@
 
 angular.module('chattyApp')
   .controller('ConfigCtrl', function ($scope, $http) {
-    var language = localStorage.getItem('LanguageOrigem');
+    // var language = localStorage.getItem('LanguageOrigem');
 
     $scope.choose = function( user ) {
       localStorage.setItem('LanguageOrigem', user.origem );

@@ -261,34 +261,34 @@ module.exports = function (grunt) {
       }
     },
     rsync: {
+      options: {
+        args: ['--verbose'],
+        exclude: ['.git*','*.scss','node_modules'],
+        recursive: true
+      },
+      dist: {
         options: {
-            args: ["--verbose"],
-            exclude: [".git*","*.scss","node_modules"],
-            recursive: true
-        },
-        dist: {
-            options: {
-                src: "<%= yeoman.app %>",
-                dest: "<%= yeoman.dist %>"
-            }
-        },
-        // stage: {
-        //     options: {
-        //         src: "../dist/",
-        //         dest: "/var/www/site",
-        //         host: "user@staging-host",
-        //         syncDestIgnoreExcl: true
-        //     }
-        // },
-        prod: {
-            options: {
-                src: "<%= yeoman.dist %>/",
-                dest: "~/public_html/labs.bygiovanni/chatty/",
-                host: "bygio431@bygiovanni.com.br",
-                port: "2222",
-                syncDestIgnoreExcl: true
-            }
+          src: '<%= yeoman.app %>',
+          dest: '<%= yeoman.dist %>'
         }
+      },
+      // stage: {
+      //     options: {
+      //         src: "../dist/",
+      //         dest: "/var/www/site",
+      //         host: "user@staging-host",
+      //         syncDestIgnoreExcl: true
+      //     }
+      // },
+      prod: {
+        options: {
+          src: '<%= yeoman.dist %>/',
+          dest: '~/public_html/labs.bygiovanni/chatty/',
+          host: 'bygio431@bygiovanni.com.br',
+          port: '2222',
+          syncDestIgnoreExcl: true
+        }
+      }
     }
   });
 
