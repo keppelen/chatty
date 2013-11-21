@@ -45,7 +45,7 @@
     "paisOrigem": "My country",
     "paisDestino": "Destination Country",
     "action": "save",
-    "search": "start searching for foreign phrases...",
+    "search": "Filter your phrases...",
     "actionCancel": "cancel"
   }
 }
