@@ -11,7 +11,8 @@ module.exports = function (grunt) {
   // configurable paths
   var yeomanConfig = {
     app: 'app',
-    dist: 'dist'
+    dist: 'dist',
+    url: 'http://labs.bygiovanni.com.br/chatty/'
   };
 
   try {
@@ -74,6 +75,9 @@ module.exports = function (grunt) {
     open: {
       server: {
         url: 'http://localhost:<%= connect.options.port %>'
+      },
+      prod: {
+        url: '<%= yeoman.url %>'
       }
     },
     clean: {
@@ -332,7 +336,8 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('deploy', [
-    'rsync'
+    'rsync',
+    'open:prod'
   ]);
 
   grunt.registerTask('default', ['build']);
