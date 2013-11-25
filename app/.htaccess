@@ -83,8 +83,9 @@
 # JavaScript
 #   Normalize to standard type (it's sniffed in IE anyways)
 #   tools.ietf.org/html/rfc4329#section-7.2
-AddType application/javascript         js jsonp
-AddType application/json               json
+AddType application/javascript                js jsonp
+AddType application/json                      json
+AddType application/x-web-app-manifest+json   .webapp
 
 # Audio
 AddType audio/ogg                      oga ogg
