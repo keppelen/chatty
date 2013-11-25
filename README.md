@@ -18,9 +18,6 @@ You're going to need:
 - bower `npm install -g bower`
 - Grunt `npm install -g grunt-cli`
 
-<!-- ## History -->
-<!-- Check [Release](https://github.com/zenorocha/generator-firefox-os/releases/) list. -->
-
 ## License
 
 [Mozilla Public License](https://www.mozilla.org/MPL/)
